@@ -8,9 +8,10 @@ body {
         "sidebar container";
 }
 
+/* sidebar section  */
 .sidebar {
     grid-area: sidebar;
-    background-color: aqua;
+    background-color: #0284c7;
     font-size: large;
 }
 
@@ -27,19 +28,38 @@ body {
     gap: 10px
 }
 
-
+/* header section */
 .header {
     grid-area: header;
     display: grid;
     grid: 1fr 1fr / 1fr 1fr;
     background-color: whitesmoke;
+    padding: 15px;
 }
 
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+/* container section */
 .container {
     grid-area: container;
-    background-color: grey;
+    background-color: #e2e8f0;
 }
 
+/* misc formatting */
 li {
     list-style-type: none;
+}
+
+button {
+    background-color: #0284c7;
+    color: white;
+    border-radius: 13px;
+    text-align: center; 
+    border: none;
+    width: 70px;
+    height: 30px
+    
 }
