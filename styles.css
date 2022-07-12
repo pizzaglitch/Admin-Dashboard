@@ -1,7 +1,8 @@
 body {
-    height: 100%;
+    height: 100vh;
     display: grid;
     grid-template-columns: 1fr 3fr ;
+    grid-template-rows: 1fr 3fr;
     grid-template-areas: 
         "sidebar header"
         "sidebar container";
@@ -10,7 +11,22 @@ body {
 .sidebar {
     grid-area: sidebar;
     background-color: aqua;
+    font-size: large;
 }
+
+.sidebar-grid {
+    display: grid;
+    gap: 50px;
+}
+
+.sidebar-nav {
+    margin-top: 50px;
+}
+.sidebar-nav, .sidebar-support {
+    display: grid; 
+    gap: 10px
+}
+
 
 .header {
     grid-area: header;
@@ -20,4 +36,8 @@ body {
 .container {
     grid-area: container;
     background-color: grey;
+}
+
+li {
+    list-style-type: none;
 }
