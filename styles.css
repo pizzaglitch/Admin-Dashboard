@@ -32,16 +32,68 @@ body {
 .header {
     grid-area: header;
     display: grid;
-    grid: 1fr 1fr / 1fr 1fr;
+    grid: 1fr 1fr / 2fr 1fr;
     background-color: whitesmoke;
     padding: 15px;
 }
 
+/* top-left */
+.search-bar {
+    display: grid;
+    grid-template-columns: .5fr 4fr;
+    grid-template-rows: .4fr;
+}
+
+input {
+    background-color: #d1d5db;
+    border: none;
+    border-radius: 10px;
+}
+
+/* top-right */
+.name {
+    display: flex;
+    gap: 10px; 
+    justify-content: flex-end;
+}
+/* bottom-left */
+.name-logo {
+    display: grid; 
+    grid-template-columns: .5fr 2fr;
+}
+
+.name-avatar {
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.name-greeting {
+    font-size: 12px;
+    font-weight: bold;
+}
+.name-user {
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+/* bottom-right */
 .buttons {
     display: flex;
     justify-content: flex-end;
     gap: 20px;
 }
+
+button {
+    background-color: #0284c7;
+    color: white;
+    border-radius: 13px;
+    text-align: center; 
+    border: none;
+    width: 70px;
+    height: 30px
+}
+
+
 /* container section */
 .container {
     grid-area: container;
@@ -53,13 +105,3 @@ li {
     list-style-type: none;
 }
 
-button {
-    background-color: #0284c7;
-    color: white;
-    border-radius: 13px;
-    text-align: center; 
-    border: none;
-    width: 70px;
-    height: 30px
-    
-}
