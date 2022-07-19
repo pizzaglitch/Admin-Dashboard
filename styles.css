@@ -19,9 +19,16 @@ body {
 /* sidebar section  */
 .sidebar {
     grid-area: sidebar;
-    background-color: #0284c7;
+    background-color: #059669;
     font-size: large;
+    
 }
+.sidebar > * img {
+    background-color:white;
+    border-radius: 20%;
+    box-shadow: 5px 5px 5px -5px black;
+}
+
 
 .sidebar-grid {
     display: grid;
@@ -29,7 +36,6 @@ body {
     padding: 20px;
     color: white;
     font-weight: 500;
-    
 }
 
 .sidebar-nav, .sidebar-support, .sidebar-title{
@@ -46,11 +52,6 @@ body {
     background-color: #f5f5f5;
     padding: 15px;
 }
-
-
-
-
-
 
 /* top-left */
 .search-bar {
@@ -110,7 +111,7 @@ input {
 }
 
 /* bottom-right */
-.buttons {
+.button-container {
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -118,7 +119,7 @@ input {
 }
 
 button {
-    background-color: #0284c7;
+    background-color: #059669;
     color: white;
     border-radius: 13px;
     text-align: center; 
@@ -158,7 +159,7 @@ button {
 .card {
     border-left: 5px solid #059669;
     background-color: #f1f5f9;
-    padding: 10px;
+    padding: 15px;
     border-radius: 5px;
     box-shadow: 5px 5px 5px -5px darkgrey;
 }
